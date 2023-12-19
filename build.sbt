@@ -1,8 +1,13 @@
 ThisBuild / version := "0.1.0-SNAPSHOT"
 
-ThisBuild / scalaVersion := "2.13.12"
+ThisBuild / scalaVersion := "3.3.1"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "untitled"
+    name := "SA1"
   )
+
+libraryDependencies ++= Seq(
+  "com.typesafe.akka" %% "akka-stream" % "2.8.5",
+  "com.lightbend.akka" %% "akka-stream-alpakka-csv" % "6.0.2"
+)

@@ -1,3 +1,4 @@
 package classes.caseclasses
 
-case class Type()
+enum Type:
+  case Compile, Runtime
